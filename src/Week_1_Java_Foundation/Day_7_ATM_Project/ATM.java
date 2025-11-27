@@ -1,4 +1,4 @@
-package Week_1.Day_7_ATM_Project;
+package Week_1_Java_Foundation.Day_7_ATM_Project;
 
 import java.util.Scanner;
 

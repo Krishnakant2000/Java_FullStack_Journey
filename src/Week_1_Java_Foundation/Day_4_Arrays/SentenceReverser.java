@@ -1,4 +1,4 @@
-package Week_1.Day_4_Arrays;
+package Week_1_Java_Foundation.Day_4_Arrays;
 
 import java.util.Scanner;
 

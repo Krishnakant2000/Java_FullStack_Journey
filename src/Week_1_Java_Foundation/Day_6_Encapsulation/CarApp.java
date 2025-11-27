@@ -1,4 +1,4 @@
-package Week_1.Day_6_Encapsulation;
+package Week_1_Java_Foundation.Day_6_Encapsulation;
 
 public class CarApp {
     static void main() {

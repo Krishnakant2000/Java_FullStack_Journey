@@ -1,4 +1,4 @@
-package Week_1.Day_1_Variables;
+package Week_1_Java_Foundation.Day_1_Variables;
 import java.util.Scanner; // Import the Scanner class to read input
 
 public class CircleArea {

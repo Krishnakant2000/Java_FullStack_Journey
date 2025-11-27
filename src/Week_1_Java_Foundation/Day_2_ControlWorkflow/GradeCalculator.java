@@ -1,4 +1,4 @@
-package Week_1.Day_2_ControlWorkflow;
+package Week_1_Java_Foundation.Day_2_ControlWorkflow;
 import java.util.Scanner;
 
 public class GradeCalculator {

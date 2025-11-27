@@ -1,4 +1,4 @@
-package Week_1.Day_5_OOP_Basics;
+package Week_1_Java_Foundation.Day_5_OOP_Basics;
 
 public class CarApp {
     static void main() {

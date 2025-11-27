@@ -1,4 +1,4 @@
-package Week_1.Day_3_Loops;
+package Week_1_Java_Foundation.Day_3_Loops;
 
 import java.util.Scanner;
 
