@@ -18,6 +18,7 @@ CREATE TABLE students (
 INSERT INTO students (name, age, grade) VALUES ('Iron Man', 40, 95.5);
 INSERT INTO students (name, age, grade) VALUES ('Captain America', 100, 88.0);
 INSERT INTO students (name, age, grade) VALUES ('Thor', 1500, 92.0);
+INSERT INTO students (name, age, grade) VALUES ('Thor', 1500, 92.0);
 -- DELETE FROM students WHERE id = 4; -- Removes the duplicate row
 
 
