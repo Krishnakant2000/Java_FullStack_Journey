@@ -1,6 +1,7 @@
 import Student from './components/Student';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
+import StudentForm from './components/StudentForm';
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
   return (
     <div className="p-10 min-h-screen bg-gray-100">
       <h1 className="text-3xl font-bold text-blue-600 mb-6 text-center">Student Management System</h1>
+
+      <StudentForm />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* We map over the REAL data now */}
