@@ -3,6 +3,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import axios from 'axios';
 import Student from './components/Student';
 import StudentForm from './components/StudentForm';
+import Navbar from './components/Navbar';
 
 function App() {
   const queryClient = useQueryClient();
@@ -35,11 +36,9 @@ function App() {
   if (isError) return <h1 className="text-red-500 text-center">Error: {error.message}</h1>;
 
   return (
-    <div className="p-10 min-h-screen bg-gray-100">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-blue-600 mb-6 text-center">
-          Student Management System
-        </h1>
+    <div className="min-h-screen bg-gray-100">
+      <Navbar />
+      <div className="max-w-6xl mx-auto px-4 pb-10">
 
         {/* Pass state to Form */}
         <StudentForm
