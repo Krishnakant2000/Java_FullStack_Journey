@@ -23,7 +23,7 @@ function StudentForm({ editingStudent, setEditingStudent }) {
 
     // Define the Create Mutation (The POST request)
     const createMutation = useMutation({
-        mutationFn: (newStudent) => axios.post('http://localhost:8080/api/students', newStudent),
+        mutationFn: (newStudent) => axios.post(`${import.meta.env.VITE_API_URL}/api/students`, newStudent),
         onSuccess: () => {
             queryClient.invalidateQueries(['students']);
             setStudent({ name: '', age: '', grade: '' });
@@ -36,7 +36,7 @@ function StudentForm({ editingStudent, setEditingStudent }) {
 
     // Define the Update Mutation (The PUT request)
     const updateMutation = useMutation({
-        mutationFn: (updatedStudent) => axios.put(`http://localhost:8080/api/students/${updatedStudent.id}`, updatedStudent),
+        mutationFn: (updatedStudent) => axios.put(`${import.meta.env.VITE_API_URL}/api/students/${updatedStudent.id}`, updatedStudent),
         onSuccess: () => {
             queryClient.invalidateQueries(['students']);
             setEditingStudent(null); // Exit edit mode

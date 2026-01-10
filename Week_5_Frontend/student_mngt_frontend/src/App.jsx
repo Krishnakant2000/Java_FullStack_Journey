@@ -13,11 +13,11 @@ function App() {
 
   const { data: students, isLoading, isError, error } = useQuery({
     queryKey: ['students'],
-    queryFn: () => axios.get('http://localhost:8080/api/students').then((res) => res.data),
+    queryFn: () => axios.get(`${import.meta.env.VITE_API_URL}/api/students`).then((res) => res.data),
   });
 
   const deleteMutation = useMutation({
-    mutationFn: (id) => axios.delete(`http://localhost:8080/api/students/${id}`),
+    mutationFn: (id) => axios.delete(`${import.meta.env.VITE_API_URL}/api/students/${id}`),
     onSuccess: () => queryClient.invalidateQueries(['students']),
     onError: (error) => { alert("Error: " + (error.response?.data?.error || "Something went wrong")); }
   });
